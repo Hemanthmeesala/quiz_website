@@ -8,6 +8,24 @@ const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
+const nev_button = document.querySelector('.nev_button');
+const nevbar = document.querySelector('.navbar');
+let nev_state = false;
+
+nev_button.addEventListener('click', () => {
+    if (nev_state) {
+        nevbar.style.right = "10px";
+        // nevbar.style.left = "none";
+        nev_button.innerHTML = "x";
+    } else {
+        // nevbar.style.left = "100%";
+        nevbar.style.right = "-120px";
+        nev_button.innerHTML = "+";
+    }
+    nev_state = !nev_state;
+    console.log(nev_state);
+});
+
 
 startBtn.onclick = () => {
     popupInfo.classList.add('active');
