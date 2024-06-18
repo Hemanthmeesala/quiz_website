@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 *{
     box-sizing: border-box;
     user-select: none;
@@ -30,7 +32,7 @@ body{
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -69,5 +71,38 @@ body{
     .nev_button {
         display: block;
         font-size: xx-large;
+    }
+}
+
+.about-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-container h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    color: #09001d;
+}
+
+.about-container p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #09001d;
+}
+
+.about-container p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-container {
+        width: 90%;
     }
 }
